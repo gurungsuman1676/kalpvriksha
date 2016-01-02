@@ -1,0 +1,21 @@
+{
+  "name": "Kalpvriksha",
+  "version": "1.0.0",
+  "homepage": "https://github.com/gurungsuman1676/kalpvriksha",
+  "authors": [
+    "suman gurung <gurungsuman1676@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.8",
+    "angular-material": "~1.0.1",
+    "angular-ui-router": "~0.2.15"
+  }
+}
