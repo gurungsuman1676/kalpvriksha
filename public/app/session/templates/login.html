@@ -1,0 +1,26 @@
+<div layout="row" layout-align="center center">
+    <md-content class="login-form-wrapper">
+        <div class="login-form-header">
+            <md-toolbar>
+                <div class="md-toolbar-tools"><h3>Kalpvriksha GPS Tracking System</h3></div>
+            </md-toolbar>
+        </div>
+        <form ng-submit="loginUser()" name="loginForm">
+            <div class="login-form-body">
+                <md-input-container class="md-block">
+                    <md-icon class="fa fa-user"></md-icon>
+                    <input type="text" ng-model="user.name" placeholder="Username">
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <md-icon class="fa fa-unlock-alt"></md-icon>
+                    <input type="password" ng-model="user.password" placeholder="Password">
+                </md-input-container>
+            </div>
+            <div class="login-form-footer">
+                <div class="login-button-container">
+                    <md-button class="md-raised md-primary login-button">Log In</md-button>
+                </div>
+            </div>
+        </form>
+    </md-content>
+</div>
