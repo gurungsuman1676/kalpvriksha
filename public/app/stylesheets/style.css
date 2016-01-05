@@ -1,21 +1,22 @@
 /*Angular Material Override*/
-md-input-container.md-icon-float>md-icon {
-    top:12px;
-    left:12px;
+md-input-container.md-icon-float > md-icon {
+    top: 12px;
+    left: 12px;
 }
 
-md-input-container{
+md-input-container {
     padding: 0;
     margin: 0;
 }
 
-.md-button{
-    margin:0;
+.md-button {
+    margin: 0;
 }
+
 /*End of Angular Material Override*/
 
-.login-form-wrapper{
-    width:30%;
+.login-form-wrapper {
+    width: 30%;
     margin: 15% auto;
     border: 1px solid #ebebeb;
     /*box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;*/
@@ -24,21 +25,39 @@ md-input-container{
 }
 
 .login-form-body {
-    padding:20px 20px 0 10px;
+    padding: 20px 20px 0 10px;
 }
 
-.login-form-footer{
-    padding:0 20px 15px 20px;
+.login-form-footer {
+    padding: 0 20px 15px 20px;
 }
 
 .login-form-footer button {
-    width:100%;
+    width: 100%;
 }
 
+.navigation {
+    margin-right: 20px;
+}
 
 /*header.html*/
-.navigation a{
-    margin: 0 5px;
+.navigation a {
+    margin: 0 8px;
     color: #ffffff;
     text-decoration: none;
+}
+
+.error-message {
+    color: red;
+    display:block;
+    padding: 10px 0 0 24px;
+}
+
+h1 a{
+    text-decoration: none;
+    color:white;
+}
+h1{
+    font-size: 40px;
+    padding:20px;
 }

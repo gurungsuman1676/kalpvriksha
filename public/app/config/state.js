@@ -3,12 +3,11 @@
     "use strict";
     angular
         .module("Kalpvriksha")
-
-        .config(function ($stateProvider, $urlRouterProvider) {
+        .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider) {
 
             $urlRouterProvider.otherwise(function ($injector) {
                 var $state = $injector.get("$state");
-                $state.go("dashboard");
+                $state.go("login");
             });
 
             $stateProvider
@@ -27,14 +26,43 @@
                     controllerAs: 'ctrl'
                 })
 
+            $mdThemingProvider
+                .theme('default')
+                .primaryPalette('blue-grey', {
+                    'default': '600'
+                })
+                .accentPalette('cyan', {
+                    'default': '500'
+                })
+                .warnPalette('defaultPrimary');
 
-                //.state('adminDashboard', {
-                //    url: '/admin',
-                //    templateUrl: 'app/admin/dashboard/adminDashboard.html',
-                //    controller: "AdminDashboardController",
-                //    controllerAs: 'ctrl'
-                //})
+            $mdThemingProvider.theme('dark', 'default')
+                .primaryPalette('defaultPrimary')
+                .dark();
 
+            $mdThemingProvider.theme('grey', 'default')
+                .primaryPalette('grey');
+
+            $mdThemingProvider.theme('custom', 'default')
+                .primaryPalette('defaultPrimary', {
+                    'hue-1': '50'
+                });
+
+            $mdThemingProvider.definePalette('defaultPrimary', {
+                '50':  '#FFFFFF',
+                '100': 'rgb(255, 198, 197)',
+                '200': '#E75753',
+                '300': '#E75753',
+                '400': '#E75753',
+                '500': '#E75753',
+                '600': '#E75753',
+                '700': '#E75753',
+                '800': '#E75753',
+                '900': '#E75753',
+                'A100': '#E75753',
+                'A200': '#E75753',
+                'A400': '#E75753',
+                'A700': '#E75753'
+            });
         });
-
 })();
