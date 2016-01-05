@@ -17,7 +17,6 @@
     }
 
     $scope.$watch('username', function(val){
-      console.log(val)
       if(val){
         $scope.errors = false;
       }
